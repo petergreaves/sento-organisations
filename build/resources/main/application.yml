@@ -1,0 +1,13 @@
+server:
+  port: 9090
+spring:
+  application:
+    name: organisationsservice
+  profiles:
+    active: default
+  cloud:
+    config:
+      enabled: true
+      uri: "http://localhost:8888"
+  main:
+    allow-bean-definition-overriding: true
