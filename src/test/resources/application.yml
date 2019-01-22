@@ -1,0 +1,12 @@
+security:
+    oauth2:
+      client:
+          clientId: eagleeye
+          clientSecret: eeSecret
+          accessTokenUri: http://localhost:7070/oauth/token
+          userAuthorizationUri: http://localhost:7070/auth/user/login
+      authorization:
+          tokenKeyAccess: permitAll()
+      resource:
+        userInfoUri: http://localhost:7070/user
+        tokenInfoUri: http://localhost:7070/oauth/check_token

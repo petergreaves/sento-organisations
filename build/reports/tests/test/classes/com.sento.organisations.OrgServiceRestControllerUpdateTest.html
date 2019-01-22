@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.sento.organisations.OrgServiceRestControllerUpdateTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.sento.organisations.OrgServiceRestControllerUpdateTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.sento.organisations.html">com.sento.organisations</a> &gt; OrgServiceRestControllerUpdateTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">7</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.165s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">failUpdateIfEmailNull</td>
+<td class="success">0.014s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">get400OnUpdateIfContactNameNull</td>
+<td class="success">0.015s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">get400OnUpdateIfEmailInvalidFormat</td>
+<td class="success">0.037s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">updateOrgReturns404IfNotFound</td>
+<td class="success">0.021s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">updateOrgReturns405IfOrgIdMismatch</td>
+<td class="success">0.014s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">updateOrganisation</td>
+<td class="success">0.042s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">updateOrganisationFromJson</td>
+<td class="success">0.022s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2019-01-22 21:49:29.900  INFO 24188 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.sento.organisations.OrgServiceRestControllerUpdateTest], using SpringBootContextLoader
+2019-01-22 21:49:29.901  INFO 24188 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.sento.organisations.OrgServiceRestControllerUpdateTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-01-22 21:49:29.904  INFO 24188 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-01-22 21:49:29.905  INFO 24188 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@25777f44, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@63b48f44, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@39cba685, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@600c61e2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7e9fbff8, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3916d1c0, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5d8da7e9, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5e8ddecb, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5d6eca9d, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@52799821, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@62fbcf68, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@52b03e7a]
+2019-01-22 21:49:29.910  INFO 24188 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-01-22 21:49:29.910  INFO 24188 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-01-22 21:49:29.913  INFO 24188 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2019-01-22 21:49:29.922  INFO 24188 --- [    Test worker] c.s.o.c.OrganisationServiceController    : Update for organisation in PUT for id BM099
+2019-01-22 21:49:29.923 DEBUG 24188 --- [    Test worker] org.hibernate.SQL                        : select organisati0_.id as id1_0_, organisati0_.email as email2_0_, organisati0_.contact_name as contact_3_0_, organisati0_.contact_phone as contact_4_0_, organisati0_.name as name5_0_, organisati0_.org_id as org_id6_0_ from organisations organisati0_ where organisati0_.org_id=?
+Hibernate: select organisati0_.id as id1_0_, organisati0_.email as email2_0_, organisati0_.contact_name as contact_3_0_, organisati0_.contact_phone as contact_4_0_, organisati0_.name as name5_0_, organisati0_.org_id as org_id6_0_ from organisations organisati0_ where organisati0_.org_id=?
+2019-01-22 21:49:29.925 ERROR 24188 --- [    Test worker] c.s.o.c.OrganisationServiceController    : Attempted to update non-existent  org : BM099
+2019-01-22 21:49:29.931  INFO 24188 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-01-22 21:49:29.932  INFO 24188 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-01-22 21:49:29.934  INFO 24188 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2019-01-22 21:49:29.962  WARN 24188 --- [    Test worker] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity&lt;?&gt; com.sento.organisations.controller.OrganisationServiceController.updateOrganisation(java.lang.String,com.sento.organisations.model.Organisation): [Field error in object 'organisation' on field 'contactEmail': rejected value [foo]; codes [Email.organisation.contactEmail,Email.contactEmail,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [organisation.contactEmail,contactEmail]; arguments []; default message [contactEmail],[Ljavax.validation.constraints.Pattern$Flag;@2bf19acd,org.springframework.validation.beanvalidation.SpringValidatorAdapter$ResolvableAttribute@32261afe]; default message [must be a well-formed email address]] ]
+2019-01-22 21:49:29.970  INFO 24188 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-01-22 21:49:29.971  INFO 24188 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-01-22 21:49:29.976  INFO 24188 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 4 ms
+2019-01-22 21:49:29.980  INFO 24188 --- [    Test worker] c.s.o.c.OrganisationServiceController    : Update for organisation in PUT for id BM023
+2019-01-22 21:49:29.980 DEBUG 24188 --- [    Test worker] org.hibernate.SQL                        : select organisati0_.id as id1_0_, organisati0_.email as email2_0_, organisati0_.contact_name as contact_3_0_, organisati0_.contact_phone as contact_4_0_, organisati0_.name as name5_0_, organisati0_.org_id as org_id6_0_ from organisations organisati0_ where organisati0_.org_id=?
+Hibernate: select organisati0_.id as id1_0_, organisati0_.email as email2_0_, organisati0_.contact_name as contact_3_0_, organisati0_.contact_phone as contact_4_0_, organisati0_.name as name5_0_, organisati0_.org_id as org_id6_0_ from organisations organisati0_ where organisati0_.org_id=?
+2019-01-22 21:49:29.990 DEBUG 24188 --- [    Test worker] org.hibernate.SQL                        : update organisations set email=?, contact_name=?, contact_phone=?, name=?, org_id=? where id=?
+Hibernate: update organisations set email=?, contact_name=?, contact_phone=?, name=?, org_id=? where id=?
+2019-01-22 21:49:30.014  INFO 24188 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-01-22 21:49:30.014  INFO 24188 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-01-22 21:49:30.017  INFO 24188 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2019-01-22 21:49:30.022  WARN 24188 --- [    Test worker] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity&lt;?&gt; com.sento.organisations.controller.OrganisationServiceController.updateOrganisation(java.lang.String,com.sento.organisations.model.Organisation): [Field error in object 'organisation' on field 'contactEmail': rejected value [null]; codes [NotNull.organisation.contactEmail,NotNull.contactEmail,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [organisation.contactEmail,contactEmail]; arguments []; default message [contactEmail]]; default message [must not be null]] ]
+2019-01-22 21:49:30.029  INFO 24188 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-01-22 21:49:30.029  INFO 24188 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-01-22 21:49:30.032  INFO 24188 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2019-01-22 21:49:30.038  WARN 24188 --- [    Test worker] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity&lt;?&gt; com.sento.organisations.controller.OrganisationServiceController.updateOrganisation(java.lang.String,com.sento.organisations.model.Organisation): [Field error in object 'organisation' on field 'contactName': rejected value [null]; codes [NotNull.organisation.contactName,NotNull.contactName,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [organisation.contactName,contactName]; arguments []; default message [contactName]]; default message [must not be null]] ]
+2019-01-22 21:49:30.046  INFO 24188 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-01-22 21:49:30.046  INFO 24188 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-01-22 21:49:30.049  INFO 24188 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2019-01-22 21:49:30.053  INFO 24188 --- [    Test worker] c.s.o.c.OrganisationServiceController    : Update for organisation in PUT for id BM023
+2019-01-22 21:49:30.054 ERROR 24188 --- [    Test worker] c.s.o.c.OrganisationServiceController    : Update failed - path/body org id mismatch for BM099
+2019-01-22 21:49:30.060  INFO 24188 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-01-22 21:49:30.061  INFO 24188 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-01-22 21:49:30.063  INFO 24188 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2019-01-22 21:49:30.068  INFO 24188 --- [    Test worker] c.s.o.c.OrganisationServiceController    : Update for organisation in PUT for id BM023
+2019-01-22 21:49:30.068 DEBUG 24188 --- [    Test worker] org.hibernate.SQL                        : select organisati0_.id as id1_0_, organisati0_.email as email2_0_, organisati0_.contact_name as contact_3_0_, organisati0_.contact_phone as contact_4_0_, organisati0_.name as name5_0_, organisati0_.org_id as org_id6_0_ from organisations organisati0_ where organisati0_.org_id=?
+Hibernate: select organisati0_.id as id1_0_, organisati0_.email as email2_0_, organisati0_.contact_name as contact_3_0_, organisati0_.contact_phone as contact_4_0_, organisati0_.name as name5_0_, organisati0_.org_id as org_id6_0_ from organisations organisati0_ where organisati0_.org_id=?
+2019-01-22 21:49:30.071 DEBUG 24188 --- [    Test worker] org.hibernate.SQL                        : update organisations set email=?, contact_name=?, contact_phone=?, name=?, org_id=? where id=?
+Hibernate: update organisations set email=?, contact_name=?, contact_phone=?, name=?, org_id=? where id=?
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.10</a> at 22-Jan-2019 21:49:30</p>
+</div>
+</div>
+</body>
+</html>

@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Optional;
 
-@Service("organisationsService")
+@Service("organisationService")
 public class OrganisationServiceImpl implements OrganisationService{
 
     @Autowired

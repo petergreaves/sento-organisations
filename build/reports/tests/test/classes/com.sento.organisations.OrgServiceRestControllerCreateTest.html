@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.sento.organisations.OrgServiceRestControllerCreateTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.sento.organisations.OrgServiceRestControllerCreateTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.sento.organisations.html">com.sento.organisations</a> &gt; OrgServiceRestControllerCreateTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.169s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">createOrgReturns405IfOrgIdMismatch</td>
+<td class="success">0.018s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">createOrganisation</td>
+<td class="success">0.105s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">createOrganisationFromJson</td>
+<td class="success">0.021s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">receive409IfOrgExists</td>
+<td class="success">0.025s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2019-01-22 21:49:29.568  INFO 24188 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.sento.organisations.OrgServiceRestControllerCreateTest], using SpringBootContextLoader
+2019-01-22 21:49:29.569  INFO 24188 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.sento.organisations.OrgServiceRestControllerCreateTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-01-22 21:49:29.575  INFO 24188 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-01-22 21:49:29.575  INFO 24188 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3d41f316, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@12cb2707, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@36a979, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@13ce0aef, org.springframework.test.context.support.DirtiesContextTestExecutionListener@212592c3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6a1d7aff, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5fd57ba4, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3c2f9bc3, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3191a50f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@305aeb40, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@44a6beb4, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@417d460]
+2019-01-22 21:49:29.582  INFO 24188 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-01-22 21:49:29.582  INFO 24188 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-01-22 21:49:29.585  INFO 24188 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2019-01-22 21:49:29.593  WARN 24188 --- [    Test worker] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2019-01-22 21:49:29.601  INFO 24188 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-01-22 21:49:29.601  INFO 24188 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-01-22 21:49:29.605  INFO 24188 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2019-01-22 21:49:29.667 DEBUG 24188 --- [    Test worker] org.hibernate.SQL                        : select organisati0_.id as id1_0_, organisati0_.email as email2_0_, organisati0_.contact_name as contact_3_0_, organisati0_.contact_phone as contact_4_0_, organisati0_.name as name5_0_, organisati0_.org_id as org_id6_0_ from organisations organisati0_ where organisati0_.org_id=?
+Hibernate: select organisati0_.id as id1_0_, organisati0_.email as email2_0_, organisati0_.contact_name as contact_3_0_, organisati0_.contact_phone as contact_4_0_, organisati0_.name as name5_0_, organisati0_.org_id as org_id6_0_ from organisations organisati0_ where organisati0_.org_id=?
+2019-01-22 21:49:29.688 DEBUG 24188 --- [    Test worker] org.hibernate.SQL                        : insert into organisations (email, contact_name, contact_phone, name, org_id) values (?, ?, ?, ?, ?)
+Hibernate: insert into organisations (email, contact_name, contact_phone, name, org_id) values (?, ?, ?, ?, ?)
+2019-01-22 21:49:29.707  INFO 24188 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-01-22 21:49:29.708  INFO 24188 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-01-22 21:49:29.710  INFO 24188 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2019-01-22 21:49:29.713 DEBUG 24188 --- [    Test worker] org.hibernate.SQL                        : select organisati0_.id as id1_0_, organisati0_.email as email2_0_, organisati0_.contact_name as contact_3_0_, organisati0_.contact_phone as contact_4_0_, organisati0_.name as name5_0_, organisati0_.org_id as org_id6_0_ from organisations organisati0_ where organisati0_.org_id=?
+Hibernate: select organisati0_.id as id1_0_, organisati0_.email as email2_0_, organisati0_.contact_name as contact_3_0_, organisati0_.contact_phone as contact_4_0_, organisati0_.name as name5_0_, organisati0_.org_id as org_id6_0_ from organisations organisati0_ where organisati0_.org_id=?
+2019-01-22 21:49:29.716 DEBUG 24188 --- [    Test worker] org.hibernate.SQL                        : insert into organisations (email, contact_name, contact_phone, name, org_id) values (?, ?, ?, ?, ?)
+Hibernate: insert into organisations (email, contact_name, contact_phone, name, org_id) values (?, ?, ?, ?, ?)
+2019-01-22 21:49:29.729  INFO 24188 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-01-22 21:49:29.729  INFO 24188 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-01-22 21:49:29.732  INFO 24188 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2019-01-22 21:49:29.736 DEBUG 24188 --- [    Test worker] org.hibernate.SQL                        : select organisati0_.id as id1_0_, organisati0_.email as email2_0_, organisati0_.contact_name as contact_3_0_, organisati0_.contact_phone as contact_4_0_, organisati0_.name as name5_0_, organisati0_.org_id as org_id6_0_ from organisations organisati0_ where organisati0_.org_id=?
+Hibernate: select organisati0_.id as id1_0_, organisati0_.email as email2_0_, organisati0_.contact_name as contact_3_0_, organisati0_.contact_phone as contact_4_0_, organisati0_.name as name5_0_, organisati0_.org_id as org_id6_0_ from organisations organisati0_ where organisati0_.org_id=?
+2019-01-22 21:49:29.739 DEBUG 24188 --- [    Test worker] org.hibernate.SQL                        : insert into organisations (email, contact_name, contact_phone, name, org_id) values (?, ?, ?, ?, ?)
+Hibernate: insert into organisations (email, contact_name, contact_phone, name, org_id) values (?, ?, ?, ?, ?)
+2019-01-22 21:49:29.745 DEBUG 24188 --- [    Test worker] org.hibernate.SQL                        : select organisati0_.id as id1_0_, organisati0_.email as email2_0_, organisati0_.contact_name as contact_3_0_, organisati0_.contact_phone as contact_4_0_, organisati0_.name as name5_0_, organisati0_.org_id as org_id6_0_ from organisations organisati0_ where organisati0_.org_id=?
+Hibernate: select organisati0_.id as id1_0_, organisati0_.email as email2_0_, organisati0_.contact_name as contact_3_0_, organisati0_.contact_phone as contact_4_0_, organisati0_.name as name5_0_, organisati0_.org_id as org_id6_0_ from organisations organisati0_ where organisati0_.org_id=?
+2019-01-22 21:49:29.747 ERROR 24188 --- [    Test worker] c.s.o.c.OrganisationServiceController    : Attempted to create duplicate org : JS0023
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.10</a> at 22-Jan-2019 21:49:30</p>
+</div>
+</div>
+</body>
+</html>

@@ -10,16 +10,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RestController
 public class OrganisationServiceApplication {
 
-
-
     public static void main(String[] args) {
         SpringApplication.run(OrganisationServiceApplication.class, args);
-    }
-
-    @RequestMapping(value="/v1/organisations",method = RequestMethod.GET)
-    public String helloWorld(){
-
-    return "Hello world!";
     }
 
 
