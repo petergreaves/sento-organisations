@@ -1,13 +1,13 @@
 package com.sento.organisations;
 
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.SpringApplication;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.bind.annotation.RequestMethod;
 
 @SpringBootApplication
 @RestController
+@EnableEurekaClient
 public class OrganisationServiceApplication {
 
     public static void main(String[] args) {
