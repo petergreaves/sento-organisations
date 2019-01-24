@@ -8,10 +8,10 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
-
+import java.util.Date;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.hibernate.annotations.Type;
 
 @Entity
 @Table(name = "organisations")
@@ -30,6 +30,7 @@ public class Organisation {
         result = prime * result + ((orgId == null) ? 0 : orgId.hashCode());
         return result;
     }
+
 
 
     @Override

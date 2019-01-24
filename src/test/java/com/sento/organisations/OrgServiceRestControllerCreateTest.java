@@ -63,7 +63,7 @@ public class OrgServiceRestControllerCreateTest extends AbstractOrgTestBase {
 
 		int status = mvcResult.getResponse().getStatus();
 		String location = mvcResult.getResponse().getHeader("Location");
-		assertTrue(201 == status && "http://services.eagleeye.com:8080/v1/organisations/JS0023".equals(location));
+		assertTrue(201 == status && "http://services.sento.com:8080/v1/organisations/JS0023".equals(location));
 	}
 
 	@Test
@@ -81,7 +81,7 @@ public class OrgServiceRestControllerCreateTest extends AbstractOrgTestBase {
 		String location = mvcResult.getResponse().getHeader("Location");
 		Organisation created = super.mapFromJson(mvcResult.getResponse().getContentAsString(), Organisation.class);
 		assertTrue(201 == status
-				&& "http://services.eagleeye.com:8080/v1/organisations/JS0023".equals(location) & created.equals(acme));
+				&& "http://services.sento.com:8080/v1/organisations/JS0023".equals(location) & created.equals(acme));
 	}
 
 	@Test
