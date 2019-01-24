@@ -1,9 +1,0 @@
-server:
-  port: 9090
-spring:
-  application:
-    name: organisationsservice
-  profiles:
-    active: default
-  main:
-    allow-bean-definition-overriding: true
