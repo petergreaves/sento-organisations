@@ -4,6 +4,10 @@ import com.sento.organisations.repository.OrganisationRepository;
 import com.sento.organisations.exceptions.OrganisationAlreadyExistsException;
 import com.sento.organisations.exceptions.OrganisationNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import com.sento.organisations.model.Organisation;
@@ -22,11 +26,23 @@ public class OrganisationServiceImpl implements OrganisationService{
      * @see com.thoughtmechanix.organisations.services.OrganisationsService#getAllOrganisations()
      */
     @Override
-    public Iterable<Organisation> getAllOrganisations() {
+    public Page<Organisation> getAllOrganisations(int page, int size, String sortBy) {
 
-        Iterable<Organisation> orgList = organisationRepository.findAll();
+        // handle sort request
 
-        return orgList;
+        Sort.Direction d = Sort.Direction.ASC;
+        if (null!=sortBy || "desc".equals(sortBy)){
+            d=Sort.Direction.DESC;
+        }
+
+        Sort sort = new Sort(d, sortBy);
+
+        Pageable pageable = PageRequest.of(page, size, sort);
+
+        Page<Organisation> pageOfOrgs = organisationRepository.findAll(pageable);
+      //  Iterable<Organisation> orgList = page.
+
+        return pageOfOrgs;
     }
 
     /* (non-Javadoc)

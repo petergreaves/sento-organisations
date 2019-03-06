@@ -16,12 +16,7 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseStatus;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.sento.organisations.exceptions.ErrorDetails;
 import com.sento.organisations.exceptions.InvalidOrganisationException;
@@ -30,10 +25,13 @@ import com.sento.organisations.exceptions.OrganisationNotFoundException;
 import com.sento.organisations.model.Organisation;
 import com.sento.organisations.service.OrganisationService;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 @RestController
 public class OrganisationServiceController {
 
-    Logger logger = LoggerFactory.getLogger(OrganisationServiceController.class);
+    Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @Value("${service.external.address}")
     String host;
@@ -44,14 +42,20 @@ public class OrganisationServiceController {
     @Value("${service.base.path}")
     String basePath;
 
+    @Value("${default.orgs.sortby}")
+    String defSortBy;
+
     @Autowired
     OrganisationService organisationService;
 
     @RequestMapping(value="/v1/organisations",method = RequestMethod.GET)
-    public ResponseEntity<Iterable<Organisation>> getOrganisations() {
+    public ResponseEntity<Iterable<Organisation>> getOrganisations(@RequestParam("page") int page,
+                                                                   @RequestParam("size") int size,
+                                                                   @RequestParam(value = "sort", required = false) String sortBy) {
 
-        logger.debug("GET received");
-        Iterable<Organisation> allOrgs = organisationService.getAllOrganisations();
+        logger.debug("GET received for page = " + page + ", size = "+size);
+        Iterable<Organisation> allOrgs =  organisationService.getAllOrganisations(page, size, (sortBy==null?defSortBy:sortBy));
+
 
         if (allOrgs.iterator().hasNext()) {
             return new ResponseEntity<Iterable<Organisation>> (allOrgs, HttpStatus.OK);

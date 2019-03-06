@@ -1,8 +1,8 @@
 package com.sento.organisations.service;
 import com.sento.organisations.model.Organisation;
 import com.sento.organisations.exceptions.OrganisationAlreadyExistsException;
-import com.sento.organisations.exceptions.OrganisationNotFoundException;
-import com.sento.organisations.exceptions.InvalidOrganisationException;
+import org.springframework.data.domain.Page;
+
 import java.util.List;
 import java.util.Optional;
 
@@ -10,7 +10,7 @@ import java.util.Optional;
 
 public interface OrganisationService {
 
-    Iterable<Organisation> getAllOrganisations();
+    Page<Organisation> getAllOrganisations(int page, int size, String sortBy);
 
     Optional<Organisation> getOrganisation(String organisationId);
 
